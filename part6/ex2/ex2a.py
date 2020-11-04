@@ -7,10 +7,16 @@ import readchar
 
 def main():
 
+    # -------------
+    #    initial
+    #______________
+
     cap =cv2.VideoCapture(0)
     cv2.namedWindow('Frame', cv2.WINDOW_AUTOSIZE)
 
-    t=True
+    #--------------
+    #    body
+    #--------------
     while True:
         ins_letter = readchar.readchar()  # pede para inserir uma letra
         asrletter = ord(ins_letter)
@@ -20,6 +26,11 @@ def main():
             break
     cv2.imshow('Frame', frame)
     cv2.waitKey(0)
+
+    #----------------
+    #      end
+    #----------------
+
 
 
 

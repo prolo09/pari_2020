@@ -31,27 +31,20 @@ def main():
     cv2.setMouseCallback(window_name, click)
 
     while True:
+
         cv2.imshow(window_name, tela)
         ch=cv2.waitKey(1)
         if ch & 0xFF==ord('q'):
             break
 
-            # ????????????????????? nao sei porqie nao funciona
         elif ch & 0xFF ==ord('r'):
-            color ==(0,0,255)
+            color =(0,0,255)
         elif ch & 0xFF == ord('b'):
-            color == (255, 0, 0)
+            color = (255, 0, 0)
         elif ch & 0xFF == ord('g'):
-            color == (0, 255, 0)
+            color = (0, 255, 0)
         elif ch & 0xFF == ord('w'):
-            color == (255, 255, 255)
-
-
-
-
-
-
-
+            color = (255, 255, 255)
 
 
 
