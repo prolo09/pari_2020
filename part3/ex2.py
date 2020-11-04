@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 def addComplex(x,y):
     P0= x[0]+y[0]
     P1=x[1]+y[1]
@@ -27,8 +27,6 @@ def main():
 
     # test multplic
     printComplex(multiplyComplex(c1,c2))
-
-
 
 
 

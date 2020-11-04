@@ -20,12 +20,11 @@ def printALLCharsUpTO():
 
 def readAllUPTO():
     print ("intreduza carater:")
-    intVariavel = readchar.readchar()
 
-    while intVariavel != 120:
+    while  True:
         intVariavel = readchar.readchar()
-        intVariavel = ord(intVariavel)
-        if intVariavel == 120:
+        ordintVariavel = ord(intVariavel)
+        if ordintVariavel == 120:
             break
         else:
             print ("volte a inserir:")

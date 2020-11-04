@@ -1,18 +1,25 @@
+#!/usr/bin/env python
 from collections import namedtuple
 
 Complex = namedtuple('complex',['r','i'])
 
 def addComplex(x,y):
+    z_r=x['r']+y['r']
+    z_i=x['i']+y['i']
 
+    return Complex(r=z_r,i=z_i)
 
 
 
 def  multiplyComplex(x,y):
+    z_r = x[0] * y[0] - x[1] * y[1]
+    z_i = x[0] * y[1] + x[1] * y[0]
 
-
+    return Complex(r=z_r, i=z_i)
 
 
 def printComplex(x):
+    print (str(x[0]) + "+" + str(x[1]) + "i")
 
 
 

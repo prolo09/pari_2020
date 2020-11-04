@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import readchar
 
 listCharAsc = []
@@ -36,13 +37,13 @@ def countNumberUPTO():
     total_number = 0
     total_other = 0
 
-    inputs = []
+    inputs = [] # crio a list de imputs
 
     while True:
         print ("intreduza carater:")
         intVariavel = readchar.readchar()
 
-        inputs.append(intVariavel)
+        inputs.append(intVariavel)  # acrecenta varaiveis no input
 
         # retiri o isnumeric pois so dava para python3 e nao tinha conseguido fazer isso anteriormente
 
@@ -56,17 +57,35 @@ def countNumberUPTO():
 
     # para destingir se e numero ou nao
 
-    for input in inputs:
+    for input in inputs:  # vai correndo as variaveis que tenho nas listas
 
-        ''' ??????????volta a nao dar devido ao progrma ser corrido em python 3...'''
 
-        if input.isnumeric():
+
+        if input.isdigit():
             total_other = total_number + 1
         else:
             total_number = total_number + 1
 
     print ("you entered " + str(total_number) + "numbers.")
     print ("you entered " + str(total_other) + "others.")
+
+
+    # ex 5c
+
+    dict_other={}
+
+    for idx,input in enumerate(inputs): # o enumerate inumera as variavais para outra variavel que tinhamos
+        if not input.isdigit():
+            dict_other[idx]=input # add new key-value to dictianary
+
+
+    print ('dint_other '+ str(dict_other))
+
+
+    # ex 5c
+
+    # use de sort na lista e organiza sozinho as variaveis ...
+
 
 
 def main():
