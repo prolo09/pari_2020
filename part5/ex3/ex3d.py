@@ -46,10 +46,11 @@ def main():
     cv2.createTrackbar('max R/V', windon_name, 0, 255, nothing)
 
 
+
     while True:
 
         # vou buscar o valor das variaveis
-        minB_H=cv2.getTrackbarPos('min B/H', windon_name)
+        minB_H = cv2.getTrackbarPos('min B/H', windon_name)
         maxB_H = cv2.getTrackbarPos('max B/H', windon_name)
         minG_S = cv2.getTrackbarPos('min G/S', windon_name)
         maxG_S = cv2.getTrackbarPos('max G/S', windon_name)
