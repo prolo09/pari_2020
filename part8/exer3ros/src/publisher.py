@@ -7,9 +7,9 @@ import argparse
 def escolhamodo():
     # funcao para escolher os modos
     esc_modo = argparse.ArgumentParser(description="escolhe topic e mesaguens")
-    esc_modo.add_argument('-tn', help="topic name")
-    esc_modo.add_argument('-m', help="mesaguem para enviar atraves do publiseher")
-    esc_modo.add_argument('-f', help="frequcia de envaio")
+    esc_modo.add_argument('-tn', help="topic name",default="chat")
+    esc_modo.add_argument('-m', help="mesaguem para enviar atraves do publiseher", default="esta ja e a mesaguem")
+    esc_modo.add_argument('-f', help="frequcia de envaio", default=5)
     arg_list=vars(esc_modo.parse_args())
 
     return arg_list

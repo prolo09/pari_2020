@@ -10,7 +10,7 @@ def callback(data):
 def escolhamodo():
     # funcao para escolher os modos
     esc_modo = argparse.ArgumentParser(description="escolhe dos nos")
-    esc_modo.add_argument('-tn', help="topic name")
+    esc_modo.add_argument('-tn', help="topic name", default='chat')
     arg_list=vars(esc_modo.parse_args())
     return arg_list
 
